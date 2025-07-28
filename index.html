@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+
+    <title>Surefit Gym and Fitness Center</title>
+
+    <link rel="icon" href="surefit logo.jpg" type="image/x-icon">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init("Hj9pfCUxTuOh_1ElP"); 
+  })();
+</script>
+
+
+</head>
+<body>
+<!-- Header -->
+<header>
+    <div class="container header-content">
+        <a href="#" class="logo-link">
+            <img src="surefit logo.jpg" alt="SureFit Logo" class="logo">
+        </a>
+        
+        <div class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+        
+        <nav id="main-nav">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#programs">Programs</a>
+            <a href="#schedule">Schedule</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<section class="hero" id="home">
+<!-- Background slides -->
+<div class="hero-slide active" style="background-image: url('background img/background.jpg');"></div>
+<div class="hero-slide" style="background-image: url('background img/background 2.jpg');"></div>
+<div class="hero-slide" style="background-image: url('background img/background 3.jpg');"></div>
+<div class="hero-slide" style="background-image: url('background img/background 4.jpg');"></div>
+
+<!-- Overlay with text content -->
+<div class="hero-overlay">
+    <div class="container">
+        <!-- Slide 1 Content -->
+        <div class="slide-content slide-text-1">
+            <h1>SUREFIT GYM & FITNESS CENTER</h1>
+            <p>The best way to be physically active is to be active for life. Your health is our priority.</p>
+        </div>
+        
+        <!-- Slide 2 Content -->
+        <div class="slide-content slide-text-2" style="display: none;">
+            <h1>TRANSFORM YOUR BODY</h1>
+            <p>Join our professional trainers and achieve your fitness goals faster than ever before.</p>
+        </div>
+        
+        <!-- Slide 3 Content -->
+        <div class="slide-content slide-text-3" style="display: none;">
+            <h1>GROUP CLASSES DAILY</h1>
+            <p>From yoga to HIIT, we offer classes for all fitness levels.</p>
+        </div>
+        
+        <!-- Slide 4 Content -->
+        <div class="slide-content slide-text-4" style="display: none;">
+            <h1>PREMIUM FACILITIES</h1>
+            <p>State-of-the-art equipment in a clean, spacious environment designed for your success.</p>
+        </div>
+    </div>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const slides = document.querySelectorAll('.hero-slide');
+        const contents = document.querySelectorAll('.slide-content');
+        let currentSlide = 0;
+        
+        // Function to change slides
+        function changeSlide() {
+            // Remove active class from all slides
+            slides.forEach(slide => slide.classList.remove('active'));
+            contents.forEach(content => content.style.display = 'none');
+            
+            // Add active class to current slide
+            slides[currentSlide].classList.add('active');
+            contents[currentSlide].style.display = 'block';
+            
+            // Increment slide counter
+            currentSlide = (currentSlide + 1) % slides.length;
+        }
+        
+        // Change slide every 5 seconds
+        setInterval(changeSlide, 5000);
+        
+        // Initialize first slide
+        changeSlide();
+    });
+</script>
+</section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Us</h2>
+                <p>Take a Tour!</p>
+            </div>
+                
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>WELCOME TO SUREFIT</h3>
+                        <p>At Surefit Gym and Fitness Center, we're more than just a gym. We are your fitness partner on the journey to unlocking your full potential. With a wide range of fitness activities tailored to your needs, we ensure you reach your fitness goals efficiently.</p>
+                        <h3>BENEFITS OF TRAINING WITH US</h3>
+                        <p>Surefit gym and Fitness Center offers a wide range of fitness activities ranging from group fitness to tailor made fitness depending on the need of the customers.
+                            Benefits of training with us at Surefit gym and fitness .
+                            We will get you to your desired fitness goal in HALF THE TIME it might take you to get there on your own simply by </p>
+                            <li>Avoiding mistakes</li> 
+                            <li>focusing your body type and fitness goal</li>
+                            <li>We will also teach you to maintain your desired goal.</li>
+                            <li>We will make you love fitness that it will become a lifestyle in no time.</li>
+                    </div>
+                    <div class="about-video">
+                        <video autoplay muted loop playsinline>
+                            <source src="gym video.mp4" type="video/mp4">
+                        </video>
+                    </div>
+            </div>
+        </section>
+                
+               <!-- Programs Section -->
+                <section id="programs">
+                    <div class="container">
+                        <div class="section-title">
+                            <h2>Our Programs</h2>
+                            <p>WE OFFER</p>
+                        </div>
+                        
+                        <div class="programs-grid">
+                            <div class="cards">
+                                <div class="card" onclick="showDescription('fitness-service')">
+                                    <p class="tip">Fitness Service</p>
+                                </div>
+                                <div class="card" onclick="showDescription('personal-training')">
+                                    <p class="tip">Personal Training</p>
+                                </div>
+                                <div class="card" onclick="showDescription('fitness-wear')">
+                                    <p class="tip">Fitness Wear</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Modal Overlay -->
+                        <div id="program-modal" class="modal-overlay">
+                            <div class="modal-content">
+                                <span class="close-btn" onclick="closeModal()">&times;</span>
+                                <div id="modal-description"></div>
+                            </div>
+                        </div>
+                    </div>
+ 
+                    <div class="programs-description">              
+                       <h4>THE CLASSES YOU WILL GET HERE</h4>
+                       <p>Surefit Gym and Fitness Center is a stand alone fitness and lifestlye centre aimed at getting you the desired result.Surefit gym  is fitted with the best cardio,selectorized and strength equipment.We have a spacious workout area for aerobics, strength training ,conditioning , table tennis etc.  We also have a specious car park for your convenience.Our personal trainers are well trained and are always on ground to help you with your fitness goals. With the convenience of a 14 hours(7am to 9pm) per day and 6 days (Monday to Staurday) a week facility,plus a Fitness shop and Spa next door its much easier to loss weight,tone,tighten,  improve strength,improve flesibility,have a healthy lifestyle,feel younger and live longer.</p>
+                    </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card mb-3">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img src="Equipment.jpg" alt="Fitness Equipment" class="img-fluid">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h3 class="card-title">Fitness Equipment</h3>
+                                                <p class="card-text">At Surefit Gym & Fitness Center, we're all about making your fitness journey enjoyable and successful. We offer a diverse range of equipment to meet your unique fitness needs. Our facility is equipped with treadmills, stationary bikes, rowing machines, dumbbells, kettlebells, and more. Our goal is to support you in achieving your fitness goals, whether it's building strength, boosting endurance, shedding those extra pounds, or simply improving your overall well-being.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card mb-3">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img src="aerobics.jpg" alt="Aerobics" class="img-fluid">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h3 class="card-title">Aerobics</h3>
+                                                <p class="card-text">We offer dynamic aerobics classes that will get your heart pumping and your spirits soaring. Our energetic instructors will guide you through fun and invigorating workouts designed to improve your cardiovascular fitness, burn calories, and boost your overall health. Come join our aerobics classes and be part of the Surefit family.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card mb-3">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img src="tabletennis.jpg" alt="Table Tennis" class="img-fluid">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h3 class="card-title">Table Tennis</h3>
+                                                <p class="card-text">Experience the joy of outdoor table tennis at SureFit Gym, where we've created a welcoming environment for players of all skill levels. Our dedicated table tennis area is designed to foster a sense of community, encouraging individuals to bond over a shared passion for this engaging sport. Join us at SureFit Gym and discover a new dimension of fitness that goes beyond the conventional, blending fun and exercise seamlessly.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                </section>
+                <script>
+    // Program descriptions data
+    const programDescriptions = {
+        'fitness-service': {
+            title: 'Fitness Service',
+            description: 'We provide group classes, access to modern equipment, and facility amenities as part of our all-inclusive fitness services. Strength training equipment, cardio machines, and a variety of training spaces for all fitness levels are available to members. Our fitness services are designed to help you achieve your fitness goals, whether you prefer working out alone or in a group setting.'
+        },
+        'personal-training': {
+            title: 'Personal Training',
+            description: 'Receive individual guidance from our licensed trainers, who will design training programs based on your individual goals.  Fitness evaluations, dietary advice, and continuous encouragement are all part of our personal training to help you reach your best potential. Our trainers are here to support you every step of the way, whether you want to lose weight, build muscle, or improve your overall fitness.'
+        },
+        'fitness-wear': {
+            title: 'Fitness Wear',
+            description: 'Explore our collection of high-quality fitness wear designed for comfort and performance. Our fitness wear includes breathable materials, and stylish designs to keep you looking and feeling great during your workouts. Whether you need workout clothes, shoes, or accessories, we have everything you need to enhance your fitness experience. Shop with us to find the perfect gear that suits your style and supports your active lifestyle.'
+        }
+    };
+
+    function showDescription(program) {
+        const modal = document.getElementById('program-modal');
+        const descContainer = document.getElementById('modal-description');
+        
+        // Set the description content
+        descContainer.innerHTML = `
+            <h3>${programDescriptions[program].title}</h3>
+            <p>${programDescriptions[program].description}</p>
+        `;
+        
+        // Show the modal
+        modal.style.display = 'flex';
+        document.body.style.overflow = 'hidden'; // Prevent scrolling
+    }
+
+    function closeModal() {
+        const modal = document.getElementById('program-modal');
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto'; // Re-enable scrolling
+    }
+    
+    // Close modal when clicking outside content
+    window.onclick = function(event) {
+        const modal = document.getElementById('program-modal');
+        if (event.target == modal) {
+            closeModal();
+        }
+    }
+</script>
+
+
+               <!-- Schedule Section -->
+<section id="schedule" class="modern-schedule">
+    <div class="container">
+        <div class="section-title">
+            <h2>SUREFIT WEEKLY WORKOUT PLAN</h2>
+            <p class="subtitle">Your Path to Fitness Excellence</p>
+        </div>
+        
+        <div class="schedule-container">
+            <div class="schedule-card">
+                <table class="fitness-timetable">
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Morning <span>8am-9am</span></th>
+                            <th>Evening <span>7pm-8pm</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="day-cell">Monday</td>
+                            <td>HIIT + Core <span>60 mins</span></td>
+                            <td>Full Body Workout <span>60 mins</span></td>
+                        </tr>
+                        <tr>
+                            <td class="day-cell">Tuesday</td>
+                            <td>Full Body Workout <span>60 mins</span></td>
+                            <td>HIIT + Core <span>60 mins</span></td>
+                        </tr>
+                        <tr>
+                            <td class="day-cell">Wednesday</td>
+                            <td>Circuit Training <span>60 mins</span></td>
+                            <td>Circuit Training <span>60 mins</span></td>
+                        </tr>
+                        <tr>
+                            <td class="day-cell">Thursday</td>
+                            <td>Core + Yoga and Stretch <span>60 mins</span></td>
+                            <td>Boxing and Kickboxing training<span>60 mins</span></td>
+                        </tr>
+                        <tr>
+                            <td class="day-cell">Friday</td>
+                            <td>Boxing and Kickboxing training <span>60 mins</span></td>
+                            <td>Mix Strength + Cardio <span>60 mins</span></td>
+                        </tr>
+                        <tr>
+                            <td class="day-cell">Saturday</td>
+                            <td>LISS Cardio <span>60 mins walk/ Aerobics class</span></td>
+                            <td>Mix Strength Training + Cardio <span>60 mins</span></td>
+                        </tr>
+                        <tr class="rest-day">
+                            <td class="day-cell">Sunday</td>
+                            <td colspan="2">Rest & Recovery Day</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>       
+                
+        <!-- Premium Gallery Section -->
+<section id="gallery" class="premium-gallery">
+    <div class="container">
+        <div class="section-title">
+            <h2>OUR GALLERY</h2>
+            <div class="title-underline"></div>
+        </div>
+        
+        <!-- Filter Tabs -->
+        <div class="gallery-filter">
+            <button class="filter-btn active" data-filter="all">
+                <span>ALL</span>
+                <div class="btn-dot"></div>
+            </button>
+            <button class="filter-btn" data-filter="yoga">
+                <span>YOGA</span>
+                <div class="btn-dot"></div>
+            </button>
+            <button class="filter-btn" data-filter="group-fitness">
+                <span>GROUP FITNESS</span>
+                <div class="btn-dot"></div>
+            </button>
+            <button class="filter-btn" data-filter="wall-sit">
+                <span>WALL-SIT TRAINING</span>
+                <div class="btn-dot"></div>
+            </button>
+            <button class="filter-btn" data-filter="weight-training">
+                <span>WEIGHT TRAINING</span>
+                <div class="btn-dot"></div>
+            </button>
+        </div>
+        
+        <!-- Gallery Grid -->
+        <div class="gallery-grid">
+            <div class="gallery-item yoga" data-category="yoga">
+                <img src="gallery pic/yoga1.jpg" alt="Yoga pose 1" loading="lazy">
+                <div class="item-overlay">
+                    <div class="zoom-icon">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item yoga" data-category="yoga">
+                <img src="gallery pic/yoga2.jpg" alt="Yoga pose 2" loading="lazy">
+                <div class="item-overlay">
+                    <div class="zoom-icon">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+             <div class="gallery-item yoga" data-category="yoga">
+                <img src="gallery pic/yoga 3.jpg" alt="Yoga pose 2" loading="lazy">
+                <div class="item-overlay">
+                    <div class="zoom-icon">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+             <div class="gallery-item yoga" data-category="yoga">
+                <img src="gallery pic/yoga4.jpg" alt="Yoga pose 2" loading="lazy">
+                <div class="item-overlay">
+                    <div class="zoom-icon">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+             <div class="gallery-item yoga" data-category="yoga">
+                <img src="gallery pic/yoga5.jpg" alt="Yoga pose 2" loading="lazy">
+                <div class="item-overlay">
+                    <div class="zoom-icon">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="gallery-item group-fitness" data-category="group-fitness">
+                <img src="gallery pic/groupfitness1.jpg" alt="Group fitness class 1" loading="lazy">
+                <div class="item-overlay">
+                    <div class="zoom-icon">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item group-fitness" data-category="group-fitness">
+                <img src="gallery pic/groupfitness2.jpg" alt="Group fitness class 2" loading="lazy">
+                <div class="item-overlay">
+                    <div class="zoom-icon">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item group-fitness" data-category="group-fitness">
+                <img src="gallery pic/groupfitness3.jpg" alt="Group fitness class 2" loading="lazy">
+                <div class="item-overlay">
+                    <div class="zoom-icon">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item group-fitness" data-category="group-fitness">
+                <img src="gallery pic/groupfitness4.jpg" alt="Group fitness class 2" loading="lazy">
+                <div class="item-overlay">
+                    <div class="zoom-icon">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item group-fitness" data-category="group-fitness">
+                <img src="gallery pic/groupfitness5.jpg" alt="Group fitness class 2" loading="lazy">
+                <div class="item-overlay">
+                    <div class="zoom-icon">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item group-fitness" data-category="group-fitness">
+                <img src="gallery pic/groupfitness6.jpg" alt="Group fitness class 2" loading="lazy">
+                <div class="item-overlay">
+                    <div class="zoom-icon">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item group-fitness" data-category="group-fitness">
+                <img src="gallery pic/groupfitness7.jpg" alt="Group fitness class 2" loading="lazy">
+                <div class="item-overlay">
+                    <div class="zoom-icon">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item group-fitness" data-category="group-fitness">
+                <img src="gallery pic/groupfitness8.jpg" alt="Group fitness class 2" loading="lazy">
+                <div class="item-overlay">
+                    <div class="zoom-icon">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="gallery-item wall-sit" data-category="wall-sit">
+                <img src="gallery pic/wallsit1.jpg" alt="Wall-sit training 1" loading="lazy">
+                <div class="item-overlay">
+                    <div class="zoom-icon">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item wall-sit" data-category="wall-sit">
+                <img src="gallery pic/wallsit2.jpg" alt="Wall-sit training 2" loading="lazy">
+                <div class="item-overlay">
+                    <div class="zoom-icon">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item wall-sit" data-category="wall-sit">
+                <img src="gallery pic/wallsit3.jpg" alt="Wall-sit training 2" loading="lazy">
+                <div class="item-overlay">
+                    <div class="zoom-icon">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item wall-sit" data-category="wall-sit">
+                <img src="gallery pic/wallsit4.jpg" alt="Wall-sit training 2" loading="lazy">
+                <div class="item-overlay">
+                    <div class="zoom-icon">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item wall-sit" data-category="wall-sit">
+                <img src="gallery pic/wallsit5.jpg" alt="Wall-sit training 2" loading="lazy">
+                <div class="item-overlay">
+                    <div class="zoom-icon">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+             <div class="gallery-item wall-sit" data-category="wall-sit">
+                <img src="gallery pic/wallsit6.jpg" alt="Wall-sit training 2" loading="lazy">
+                <div class="item-overlay">
+                    <div class="zoom-icon">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+             <div class="gallery-item wall-sit" data-category="wall-sit">
+                <img src="gallery pic/wallsit7.jpg" alt="Wall-sit training 2" loading="lazy">
+                <div class="item-overlay">
+                    <div class="zoom-icon">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+             <div class="gallery-item wall-sit" data-category="wall-sit">
+                <img src="gallery pic/wallsit8.jpg" alt="Wall-sit training 2" loading="lazy">
+                <div class="item-overlay">
+                    <div class="zoom-icon">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+
+
+           
+            <div class="gallery-item weight-training" data-category="weight-training">
+                <img src="gallery pic/weight1.jpg" alt="Weight training 1" loading="lazy">
+                <div class="item-overlay">
+                    <div class="zoom-icon">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item weight-training" data-category="weight-training">
+                <img src="gallery pic/weight2.jpg" alt="Weight training 2" loading="lazy">
+                <div class="item-overlay">
+                    <div class="zoom-icon">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item weight-training" data-category="weight-training">
+                <img src="gallery pic/weight3.jpg" alt="Weight training 2" loading="lazy">
+                <div class="item-overlay">
+                    <div class="zoom-icon">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item weight-training" data-category="weight-training">
+                <img src="gallery pic/weight4.jpg" alt="Weight training 2" loading="lazy">
+                <div class="item-overlay">
+                    <div class="zoom-icon">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item weight-training" data-category="weight-training">
+                <img src="gallery pic/weight5.jpg" alt="Weight training 2" loading="lazy">
+                <div class="item-overlay">
+                    <div class="zoom-icon">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item weight-training" data-category="weight-training">
+                <img src="gallery pic/weight6.jpg" alt="Weight training 2" loading="lazy">
+                <div class="item-overlay">
+                    <div class="zoom-icon">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item weight-training" data-category="weight-training">
+                <img src="gallery pic/weight7.jpg" alt="Weight training 2" loading="lazy">
+                <div class="item-overlay">
+                    <div class="zoom-icon">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+    
+    <!-- Lightbox Modal -->
+    <div id="lightbox-modal" class="lightbox-modal">
+        <span class="close-btn">&times;</span>
+        <div class="lightbox-content">
+            <img id="lightbox-image" src="" alt="">
+        </div>
+    </div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Filter functionality
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            // Remove active class from all buttons
+            filterBtns.forEach(btn => {
+                btn.classList.remove('active');
+                btn.querySelector('.btn-dot').style.transform = 'translateX(-50%) scale(0)';
+            });
+            
+            // Add active class to clicked button
+            this.classList.add('active');
+            this.querySelector('.btn-dot').style.transform = 'translateX(-50%) scale(1)';
+            
+            const filter = this.dataset.filter;
+            
+            // Filter gallery items
+            galleryItems.forEach(item => {
+                if (filter === 'all' || item.dataset.category === filter) {
+                    item.style.display = 'block';
+                    setTimeout(() => {
+                        item.style.opacity = '1';
+                    }, 50);
+                } else {
+                    item.style.opacity = '0';
+                    setTimeout(() => {
+                        item.style.display = 'none';
+                    }, 300);
+                }
+            });
+        });
+    });
+    
+    // Lightbox functionality
+    const lightboxModal = document.getElementById('lightbox-modal');
+    const lightboxImg = document.getElementById('lightbox-image');
+    const closeBtn = document.querySelector('.lightbox-modal .close-btn'); // Fixed selector
+    
+    // Open lightbox when gallery item is clicked
+    galleryItems.forEach(item => {
+        item.addEventListener('click', function() {
+            const imgSrc = this.querySelector('img').src;
+            const imgAlt = this.querySelector('img').alt;
+            
+            lightboxImg.src = imgSrc;
+            lightboxImg.alt = imgAlt;
+            
+            // Make image smaller by setting max dimensions
+            lightboxImg.style.maxWidth = '70%';
+            lightboxImg.style.maxHeight = '70vh';
+            
+            lightboxModal.style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        });
+    });
+    
+    // Close lightbox
+    closeBtn.addEventListener('click', function(e) {
+        e.stopPropagation(); // Prevent event bubbling
+        lightboxModal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+    });
+    
+    // Close when clicking outside image
+    lightboxModal.addEventListener('click', function(e) {
+        if (e.target === lightboxModal) {
+            lightboxModal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+    });
+    
+    // Close with ESC key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            lightboxModal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+    });
+});
+</script>
+</section>
+
+    
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Contact Information</h2>
+                    <p>Fill up the form and our team will get back to you within 24 hours</p>
+                </div>
+                
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <h3>OUR CONTACT DETAILS</h3>
+                        <ul class="contact-details">
+                            <li>
+                                <i class="fas fa-phone"></i>
+                                <span>+234 8023609696</span>
+                                <span>+234 7025028126,</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope"></i>
+                                <span>surefitwellness@gmail.com</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>2 Adewumi Estate, Kudirat Abiola Way, First Bank bus stop, Oregun , Ikeja, Nigeria</span>
+                            </li>
+                        </ul>
+                        <form id="contactForm">
+                    <div class="form-group">
+                        <h3>SEND US A MESSAGE</h3>
+                      <label>First Name</label>
+                      <input type="text" name="first_name" placeholder="Enter first name" required>
+                    </div>
+                    <div class="form-group">
+                      <label>Last Name</label>
+                      <input type="text" name="last_name" placeholder="Enter last name" required>
+                    </div>
+                    <div class="form-group">
+                      <label>Your Email</label>
+                      <input type="email" name="email" placeholder="Enter email address" required>
+                    </div>
+                    <div class="form-group">
+                      <label>Phone Number</label>
+                      <input type="tel" name="phone" placeholder="Enter phone number">
+                    </div>
+                    <div class="form-group">
+                      <label>Write your message</label>
+                      <textarea name="message" placeholder="Enter your message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                   </form>
+                    </div>
+                    
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.41392097103!2d3.367678675098571!3d6.595367793398403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b92387dd37f3d%3A0xf4d89421ffc4e6e4!2sSurefit%20Gym%20And%20Fitness%20Centre!5e0!3m2!1sen!2sus!4v1748452793716!5m2!1sen!2sus" width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-column">
+                        <h3>About Us</h3>
+                        <p>SUREFIT GYM & FITNESS CENTER is dedicated to helping you achieve your fitness goals with state-of-the-art equipment and professional trainers.</p>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h3>Quick Links</h3>
+                        <ul class="footer-links">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#programs">Programs</a></li>
+                            <li><a href="#schedule">Schedule</a></li>
+                            <li><a href="#gallery">Gallery</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    
+                    
+                    <div class="footer-column">
+                        <h3>Connect With Us</h3>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/surefitgym"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://x.com/surefitgym"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/surefitgym/"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.tiktok.com/@surefitgym"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="copyright">
+                    <p>&copy; 2025 SUREFIT GYM & FITNESS CENTER. All rights reserved. | <a href="privacy policy.html">Privacy Policy</a> | <a href="terms and condition.html">Terms & Conditions</a></p>
+                </div>
+            </div>
+        </footer>
+    <!-- Scripts -->
+     <script src="home.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  // Initialize EmailJS with your public key
+  (function() {
+    emailjs.init("Hj9pfCUxTuOh_1ElP"); 
+  })();
+
+  // Add event listener to the form
+  document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const form = this; 
+
+    // Send the form using EmailJS
+    emailjs.sendForm("service_icsjgeh", "template_2aacpp4", form)
+      .then(function(response) {
+        console.log("Email sent successfully:", response);
+        alert("Your message has been sent successfully! We’ll get back to you within 24 hours.");
+        form.reset();
+      })
+      .catch(function(error) {
+        console.error("Error sending email:", error);
+        alert("There was an error sending your message. Please try again later.");
+      });
+  });
+</script>
+
+    
+    <script>
+        // Mobile Menu Toggle
+        const menuBtn = document.querySelector('.menu-btn');
+        const mainNav = document.querySelector('#main-nav');
+        
+        menuBtn.addEventListener('click', () => {
+            mainNav.classList.toggle('active');
+        });
+        
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('#main-nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                mainNav.classList.remove('active');
+            });
+        });
+        
+        // Form submission handling
+        document.getElementById('membershipForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Membership registration submitted successfully!');
+            this.reset();
+        });
+        
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Your message has been sent successfully! We will get back to you within 24 hours.');
+            this.reset();
+        });        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId !== '#') {
+                    document.querySelector(targetId).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+  
+</script>
+   
+</body>
+</html>
